@@ -1,16 +1,16 @@
 class: middle, center, title-slide
 count: false
 
-# `pyhf` and analysis optimization<br> with automatic differentiation
+# Software Citation Tools, Technologies,<br> and Best Practices
 
 .huge.blue[Matthew Feickert]<br>
 .large[(University of Wisconsin-Madison)]
 <br>
 [matthew.feickert@cern.ch](mailto:matthew.feickert@cern.ch)
 
-[ATLAS HDBS Workshop 2022](https://indico.cern.ch/event/1132691/contributions/4994710/)
+[Software Citation and Recognition in HEP Workshop 2022](https://indico.cern.ch/event/1211229/contributions/5120858/)
 <br>
-September 6th, 2022
+November 23rd, 2022
 
 .middle-logo[]
 
@@ -18,10 +18,10 @@ September 6th, 2022
 # Talk information
 <br><br>
 
-- .bold[talk time]: .bold[18 minute] presentation on pyhf
-   - .bold[15 minutes] talk
-   - .bold[3 minutes] questions
-- .bold[talk request]: For the "New ML approaches" session in the spirit of how ML developments have helped us improve the physics we're able to do we'd like to invite you to give a talk on phyf, any recent developments, and how HDBS analyses can use it for better physics.
+- .bold[talk time]: .bold[20 minute] presentation
+   - .bold[10 minutes] talk
+   - .bold[10 minutes] questions
+- .bold[talk notes]: Follow up on Dan Kat's talk to keep a consistent thread
 
 <!-- ---
 # Goals of physics analysis at the LHC
