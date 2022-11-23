@@ -99,7 +99,7 @@ date-released: 2021-08-11
 # CITATION.cff: How to keep up to date?
 
 .large[
-- As plain text, very easy to update version information when cutting a release.
+- As plain text, very easy to update version information when cutting a release
 - Can use tool control of version update to make it easier
    - Example: [`tbump`](https://github.com/your-tools/tbump)
    - `$ tbump <version target>`
