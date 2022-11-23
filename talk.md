@@ -14,14 +14,14 @@ November 23rd, 2022
 
 .middle-logo[]
 
----
+<!-- ---
 # Talk information
 <br><br>
 
 - .bold[talk time]: .bold[20 minute] presentation
    - .bold[10 minutes] talk
    - .bold[10 minutes] questions
-- .bold[talk notes]: Follow up on Dan Katz's talk to keep a consistent thread
+- .bold[talk notes]: Follow up on Dan Katz's talk to keep a consistent thread -->
 
 ---
 # Introduction and Overview
@@ -29,7 +29,7 @@ November 23rd, 2022
 .kol-1-2.large[
 - In Tuesday's session, Daniel Katz already gave very nice high level overview of software citation .bold[principles] and .bold[tools]
 - This is an .red[opinionated] summary of the tooling landscape and examples of workflows
-   - Full disclosure: Opinions formed from pyhf development.
+   - Full disclosure: Opinions formed from pyhf development and from Scikit-HEP community discussions (c.f. [Eduardo's talk](https://indico.cern.ch/event/1211229/contributions/5150204/)).
 - Meant to be recommendations to software developers on making your work as .bold[easy to cite as possible]
    - These recommendations can transfer to experiment software as well
 ]
@@ -146,25 +146,27 @@ date-released: 2021-08-11
 ]
 
 ---
-# CodeMeta
+# Proving a citation information from APIs
 
-.kol-1-2.large[
-- Zenodo
+.kol-2-3.large[
+- In addition to providing standard formats, providing users a language API or CLI API to get the citation information for the version of the tool is helpful
+- Historically, this was done by printing a banner with citation or copyright information when the library is used.
+   - This should .bold[not] be done now. This creates noise for users and if multiple tools did this your terminal would get filled.
+   - Most libraries that used to do this have now abandoned this approach.
+- Opinion: There are tools in broader scientific ecosystem that provide citation information for their dependencies as well. While very conscientious, I think this is .bold[unnecessary] and can be confusing to users.
 ]
-.kol-1-2[
+.kol-1-3[
 <br><br>
-.center.width-100[[![zenodo-landing-page](figures/zenodo-landing-page.png)](https://zenodo.org/)]
-]
-
----
-# Proving a citation information from CLI
-
-.kol-1-2.large[
-- Zenodo
-]
-.kol-1-2[
-<br><br>
-.center.width-100[[![zenodo-landing-page](figures/zenodo-landing-page.png)](https://zenodo.org/)]
+```console
+# CLI API
+$ mytool --citation
+```
+```python
+# Python API
+import mytool
+mytool.utils.citation()
+```
+.center.large[Example APIs]
 ]
 
 <!-- ---
@@ -216,12 +218,6 @@ Backup
 As mentioned, these opinions have been formed from developing pyhf, and the citation count for the [JOSS paper](https://doi.org/10.21105/joss.02823) has increased each year.
 
 .center.width-100[[![pyhf-inspire-citations-count](figures/pyhf-inspire-citations-count.png)](https://inspirehep.net/literature?sort=mostrecent&size=25&page=1&q=refersto%3Arecid%3A1845084&ui-citation-summary=true)]
-
-
----
-# References
-
-1. F. James, Y. Perrin, L. Lyons, .italic[[Workshop on confidence limits: Proceedings](http://inspirehep.net/record/534129)], 2000.
 
 ---
 
