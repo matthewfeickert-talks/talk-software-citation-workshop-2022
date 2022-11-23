@@ -62,7 +62,7 @@ November 23rd, 2022
 - Adopt the [Citation File Format](https://citation-file-format.github.io/) as a common standard and add a `CITATION.cff` to project repository
    - Human- and machine-readable file format in YAML
    - Has well defined, versioned schema
-   - Convertible to other citation formats (BibTeX, Codemeta, Endnote, RIS, schema.org, Zenodo, APA)
+   - Convertible to other citation formats (BibTeX, CodeMeta, Endnote, RIS, schema.org, Zenodo, APA)
 - Supported by [GitHub](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files), [Zenodo](https://twitter.com/ZENODO_ORG/status/1420357001490706442), and [Zotero](https://twitter.com/zotero/status/1420515377390530560)!
 - [Web tool initializer](https://citation-file-format.github.io/cff-initializer-javascript/) for easily creating first `CITATION.cff`
 - [Tooling for validation](https://github.com/citation-file-format/cff-converter-python)
