@@ -21,7 +21,7 @@ November 23rd, 2022
 - .bold[talk time]: .bold[20 minute] presentation
    - .bold[10 minutes] talk
    - .bold[10 minutes] questions
-- .bold[talk notes]: Follow up on Dan Kat's talk to keep a consistent thread
+- .bold[talk notes]: Follow up on Dan Katz's talk to keep a consistent thread
 
 <!-- ---
 # Goals of physics analysis at the LHC
