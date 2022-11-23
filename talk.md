@@ -198,13 +198,18 @@ Provide constraints on models through setting best limits
 
 ---
 # Summary
-.kol-2-3[
-- .huge.bold[Build community practices on top of established standards]
-- Y
+.kol-2-3.huge[
+- Build community practices on top of .bold[established standards]
+   <!-- - There are professional communities at work building tools, so we should join them, not rebuild a wheel -->
+- If citation of your software is important to you, .bold[make it easy] for a user to find your citation information
+- Modern standards like `CITATION.cff` allow for .bold[single source of citation information] that can be exported as needed
+- Long term archives + FAIR practices
+   - Zenodo provides automatically release information each release
 ]
 .kol-1-3[
-- X
-- Y
+.center.width-80[[![CFF-logo](figures/CFF-logo.png)](https://citation-file-format.github.io/)]
+
+.center.width-100[[![zenodo-logo](figures/zenodo-logo.svg)](https://zenodo.org/)]
 ]
 
 ---
