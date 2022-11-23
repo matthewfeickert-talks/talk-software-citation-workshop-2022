@@ -40,14 +40,19 @@ November 23rd, 2022
 ]
 
 ---
-# Making clear statements in documentation
+# Make clear how to cite in documentation
 
 .kol-1-2.large[
-- Zenodo
+- The easiest way, but least robust way: If you have a particular citation that you want people to use, put it .bold[everywhere]
+   - Version control repository README
+   - Online software documentation (landing page, how to cite page)
+   - Package distribution websites (e.g. PyPI)
+- Having single source of truth for citations: version control repository that all other sources derive from.
+- Make your citation preferences clear to the world and SEO. Do not rely on people emailing to ask (they shouldn't have to).
 ]
 .kol-1-2[
-<br><br>
-.center.width-100[[![zenodo-landing-page](figures/zenodo-landing-page.png)](https://zenodo.org/)]
+.center.width-100[[![pyhf-citation-request](figures/pyhf-citation-request.png)](https://pyhf.readthedocs.io/en/stable/citations.html)]
+.center[[pyhf's "Use and Citations" page in documentation](https://pyhf.readthedocs.io/en/stable/citations.html)]
 ]
 
 ---
