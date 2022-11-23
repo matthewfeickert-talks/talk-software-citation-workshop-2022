@@ -98,23 +98,39 @@ date-released: 2021-08-11
 ---
 # Zenodo
 
-.kol-1-2.large[
-- Zenodo
+.kol-1-2[
+.center.width-100[[![zenodo-landing-page](figures/zenodo-landing-page.png)](https://zenodo.org/)]
+
+- Open source (but your files can be closed access)
+- Versioned archival of everything: code, documents, data products, data sets
 ]
 .kol-1-2[
-<br><br>
-.center.width-100[[![zenodo-landing-page](figures/zenodo-landing-page.png)](https://zenodo.org/)]
+.center.width-75[[![why_use_zenodo](figures/why_use_zenodo.png)](https://zenodo.org/)]
 ]
 
 ---
-# DOI minting made easy
+# Zenodo: DOI minting made easy
 
 - Everything on Zenodo has a DOI
-- You can upload directly to Zenodo or can enable it to [automatically preserve work from GitHub](https://guides.github.com/activities/citable-code/)
-- We're going to do so now
+   - Provides both a .bold[project] DOI (resolves to latest) and .bold[version specific] DOI
+- Enable it to [automatically preserve work from GitHub](https://guides.github.com/activities/citable-code/)
+   - Can also directly upload, but lose out on automation
+- Once you have a DOI, put it .bold[everywhere] (again)
+   - Recommend sharing the project DOI and letting users select a specific version if they want it
 
 .center[
 .width-80[[![Zenodo_DOI_guide](figures/Zenodo_DOI_guide.png)](https://zenodo.org/account/settings/github/)]
+]
+
+---
+# Zenodo: Communities allow archival collections
+
+.kol-1-2[
+.center.width-100[[![Zenodo_communities_PyHEP](figures/Zenodo_communities_PyHEP.png)](https://zenodo.org/communities/?p=PyHEP)]
+]
+.kol-1-2[
+<br>
+.center.width-100[[![Zenodo_communities_ATLAS](figures/Zenodo_communities_ATLAS.png)](https://zenodo.org/communities/atlas_experiment/)]
 ]
 
 ---
