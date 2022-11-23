@@ -23,6 +23,77 @@ November 23rd, 2022
    - .bold[10 minutes] questions
 - .bold[talk notes]: Follow up on Dan Katz's talk to keep a consistent thread
 
+---
+# Introduction and Overview
+
+.kol-1-2.large[
+- In Tuesday's session, Daniel Katz already gave very nice high level overview of software citation .bold[principles] and .bold[tools]
+- This is an .red[opinionated] summary of the tooling landscape and examples of workflows
+   - Full disclosure: Opinions formed from pyhf development.
+- Meant to be recommendations to software developers on making your work as .bold[easy to cite as possible]
+   - These recommendations can transfer to experiment software as well
+]
+.kol-1-2[
+<br><br>
+.center.width-100[[![dan-katz-intro](figures/dan-katz-intro.png)](https://indico.cern.ch/event/1211229/contributions/5120849/)]
+.center[[Daniel Katz's talk](https://indico.cern.ch/event/1211229/contributions/5120849/)]
+]
+
+---
+# Making clear statements in documentation
+
+.kol-1-2.large[
+- Zenodo
+]
+.kol-1-2[
+<br><br>
+.center.width-100[[![zenodo-landing-page](figures/zenodo-landing-page.png)](https://zenodo.org/)]
+]
+
+---
+# CITATION.cff
+
+.kol-1-2.large[
+- Zenodo
+]
+.kol-1-2[
+<br><br>
+.center.width-100[[![zenodo-landing-page](figures/zenodo-landing-page.png)](https://zenodo.org/)]
+]
+
+---
+# Zenodo
+
+.kol-1-2.large[
+- Zenodo
+]
+.kol-1-2[
+<br><br>
+.center.width-100[[![zenodo-landing-page](figures/zenodo-landing-page.png)](https://zenodo.org/)]
+]
+
+---
+# DOI minting made easy
+
+- Everything on Zenodo has a DOI
+- You can upload directly to Zenodo or can enable it to [automatically preserve work from GitHub](https://guides.github.com/activities/citable-code/)
+- We're going to do so now
+
+.center[
+.width-80[[![Zenodo_DOI_guide](figures/Zenodo_DOI_guide.png)](https://zenodo.org/account/settings/github/)]
+]
+
+---
+# Proving a citation information from CLI
+
+.kol-1-2.large[
+- Zenodo
+]
+.kol-1-2[
+<br><br>
+.center.width-100[[![zenodo-landing-page](figures/zenodo-landing-page.png)](https://zenodo.org/)]
+]
+
 <!-- ---
 # Goals of physics analysis at the LHC
 
@@ -53,7 +124,7 @@ Provide constraints on models through setting best limits
 ---
 # Summary
 .kol-2-3[
-- X
+- .huge.bold[Build community practices on top of established standards]
 - Y
 ]
 .kol-1-3[
@@ -65,6 +136,14 @@ Provide constraints on models through setting best limits
 class: end-slide, center
 
 Backup
+
+---
+# Does any of this actually work?
+
+As mentioned, these opinions have been formed from developing pyhf, and the citation count for the [JOSS paper](https://doi.org/10.21105/joss.02823) has increased each year.
+
+.center.width-100[[![pyhf-inspire-citations-count](figures/pyhf-inspire-citations-count.png)](https://inspirehep.net/literature?sort=mostrecent&size=25&page=1&q=refersto%3Arecid%3A1845084&ui-citation-summary=true)]
+
 
 ---
 # References
