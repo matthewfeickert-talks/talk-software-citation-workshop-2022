@@ -43,7 +43,7 @@ November 23rd, 2022
 # Make clear how to cite in documentation
 
 .kol-1-2.large[
-- The easiest way, but least robust way: If you have a particular citation that you want people to use, put it .bold[everywhere]
+- The easiest, but least robust way: If you have a particular citation that you want people to use, put it .bold[everywhere]
    - Version control repository README
    - Online software documentation (landing page, how to cite page)
    - Package distribution websites (e.g. PyPI)
@@ -58,12 +58,39 @@ November 23rd, 2022
 ---
 # CITATION.cff
 
-.kol-1-2.large[
-- Zenodo
+.kol-3-5.large[
+- Adopt the [Citation File Format](https://citation-file-format.github.io/) as a common standard and add a `CITATION.cff` to project repository
+   - Human- and machine-readable file format in YAML
+   - Convertible to other citation formats (BibTeX, Codemeta, Endnote, RIS, schema.org, Zenodo, APA)
+- Supported by [GitHub](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files), [Zenodo](https://twitter.com/ZENODO_ORG/status/1420357001490706442), and [Zotero](https://twitter.com/zotero/status/1420515377390530560)!
+- [Tooling for validation](https://github.com/citation-file-format/cff-converter-python)
+.tiny[
+```console
+$ python -m pip install cffconvert
+$ cffconvert --validate
+Citation metadata are valid according to schema version 1.2.0.
+```
 ]
-.kol-1-2[
-<br><br>
-.center.width-100[[![zenodo-landing-page](figures/zenodo-landing-page.png)](https://zenodo.org/)]
+]
+.kol-2-5[
+.tiny[
+```
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Druskat
+    given-names: Stephan
+    orcid: https://orcid.org/0000-0003-4925-7248
+title: "My Research Software"
+version: 2.0.4
+doi: 10.5281/zenodo.1234
+date-released: 2021-08-11
+```
+]
+
+.center[Example of minimal `CITATION.cff`]
+
+.center.width-100[[![citation-link](figures/citation-link.png)](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files)]
 ]
 
 ---
@@ -86,6 +113,17 @@ November 23rd, 2022
 
 .center[
 .width-80[[![Zenodo_DOI_guide](figures/Zenodo_DOI_guide.png)](https://zenodo.org/account/settings/github/)]
+]
+
+---
+# CodeMeta
+
+.kol-1-2.large[
+- Zenodo
+]
+.kol-1-2[
+<br><br>
+.center.width-100[[![zenodo-landing-page](figures/zenodo-landing-page.png)](https://zenodo.org/)]
 ]
 
 ---
