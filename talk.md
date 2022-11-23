@@ -96,6 +96,33 @@ date-released: 2021-08-11
 ]
 
 ---
+# CITATION.cff: How to keep up to date?
+
+.large[
+- As plain text, very easy to update version information when cutting a release.
+- Can use tool control of version update to make it easier
+   - Example: [`tbump`](https://github.com/your-tools/tbump)
+   - `$ tbump <version target>`
+- Also possible to have [automated version bump workflows](https://github.com/scikit-hep/pyhf/blob/d9355e23ffd4aceb24041c51c697a55fa40a3d94/.github/workflows/bump-version.yml) using continuous integration
+- (Jumping ahead a slide) What about the Zenodo DOI?
+   - For simplicity, use the project level DOI and not the version level DOI
+]
+
+.smaller[
+```yaml
+cff-version: 1.2.0
+message: "Please cite the following works when using this software."
+type: software
+...
+title: "mylibrary: v1.2.3"
+version: 1.2.3
+doi: 10.5281/zenodo.1123456
+repository-code: "https://github.com/myorg/mylibrary/releases/tag/v1.2.3"
+url: "https://mylibrary.readthedocs.io/en/v1.2.3/"
+```
+]
+
+---
 # Zenodo
 
 .kol-1-2[
@@ -150,7 +177,8 @@ date-released: 2021-08-11
 
 .kol-2-3.large[
 - In addition to providing standard formats, providing users a language API or CLI API to get the citation information for the version of the tool is helpful
-- Historically, this was done by printing a banner with citation or copyright information when the library is used.
+   - User doesn't have to check if the information they find online matches their version.
+- Historically, this was done by printing a banner with citation or copyright information when the library is used
    - This should .bold[not] be done now. This creates noise for users and if multiple tools did this your terminal would get filled.
    - Most libraries that used to do this have now abandoned this approach.
 - Opinion: There are tools in broader scientific ecosystem that provide citation information for their dependencies as well. While very conscientious, I think this is .bold[unnecessary] and can be confusing to users.
@@ -160,6 +188,7 @@ date-released: 2021-08-11
 ```console
 # CLI API
 $ mytool --citation
+$ mytool --cite
 ```
 ```python
 # Python API
@@ -203,7 +232,7 @@ Provide constraints on models through setting best limits
    <!-- - There are professional communities at work building tools, so we should join them, not rebuild a wheel -->
 - If citation of your software is important to you, .bold[make it easy] for a user to find your citation information
 - Modern standards like `CITATION.cff` allow for .bold[single source of citation information] that can be exported as needed
-- Long term archives + FAIR practices
+- Long term archives + [FAIR practices](https://indico.cern.ch/event/1211229/contributions/5120857/)
    - Zenodo provides automatically release information each release
 ]
 .kol-1-3[
@@ -215,7 +244,7 @@ Provide constraints on models through setting best limits
 ---
 class: end-slide, center
 
-Backup
+.huge[Backup]
 
 ---
 # Does any of this actually work?
