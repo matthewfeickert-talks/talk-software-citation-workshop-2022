@@ -113,13 +113,25 @@ date-released: 2021-08-11
 
 - Everything on Zenodo has a DOI
    - Provides both a .bold[project] DOI (resolves to latest) and .bold[version specific] DOI
-- Enable it to [automatically preserve work from GitHub](https://guides.github.com/activities/citable-code/)
-   - Can also directly upload, but lose out on automation
+- Enable it to [automatically preserve work from GitHub](https://guides.github.com/activities/citable-code/) (can also directly upload, but lose out on automation)
+   - Benefit from having a DOI for .bold[every version] regardless of software paper landscape state
 - Once you have a DOI, put it .bold[everywhere] (again)
    - Recommend sharing the project DOI and letting users select a specific version if they want it
 
 .center[
 .width-80[[![Zenodo_DOI_guide](figures/Zenodo_DOI_guide.png)](https://zenodo.org/account/settings/github/)]
+]
+
+---
+# Zenodo + CITATION.cff
+
+.center.large[CITATION.cff used by Zenodo importer to fully define Zenodo archive metadata]
+
+.kol-1-2[
+.center.width-85[[![pyhf-citation-cff](figures/pyhf-citation-cff.png)](https://github.com/scikit-hep/pyhf/blob/d9355e23ffd4aceb24041c51c697a55fa40a3d94/CITATION.cff)]
+]
+.kol-1-2[
+.center.width-110[[![pyhf-zenodo-page](figures/pyhf-zenodo-page.png)](https://zenodo.org/record/7110486)]
 ]
 
 ---
